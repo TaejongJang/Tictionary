@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlTelper", "HtmlTelper\HtmlTelper.csproj", "{CAEE1C51-B90E-47D9-B7A4-9671AD3F254A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpTelper", "HttpTelper\HttpTelper.csproj", "{ADC65772-9571-4C6E-BB91-EE06AF4C98A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormaTelper", "FormaTelper\FormaTelper.csproj", "{37E98A01-9B00-452F-9B1D-E65AA77450F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageTelper", "ImageTelper\ImageTelper.csproj", "{14F49A12-535B-4B11-B964-4214BE01A2E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tring", "Tring\Tring.csproj", "{6440AC7C-2EEA-4198-A1B1-687E0A3E6EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TebBrowser", "TebBrowser\TebBrowser.csproj", "{3C3A9B6B-8C9C-4593-8EC2-E0FBB11F2FBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAEE1C51-B90E-47D9-B7A4-9671AD3F254A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEE1C51-B90E-47D9-B7A4-9671AD3F254A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEE1C51-B90E-47D9-B7A4-9671AD3F254A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEE1C51-B90E-47D9-B7A4-9671AD3F254A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC65772-9571-4C6E-BB91-EE06AF4C98A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC65772-9571-4C6E-BB91-EE06AF4C98A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC65772-9571-4C6E-BB91-EE06AF4C98A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC65772-9571-4C6E-BB91-EE06AF4C98A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E98A01-9B00-452F-9B1D-E65AA77450F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E98A01-9B00-452F-9B1D-E65AA77450F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E98A01-9B00-452F-9B1D-E65AA77450F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E98A01-9B00-452F-9B1D-E65AA77450F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F49A12-535B-4B11-B964-4214BE01A2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F49A12-535B-4B11-B964-4214BE01A2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F49A12-535B-4B11-B964-4214BE01A2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F49A12-535B-4B11-B964-4214BE01A2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6440AC7C-2EEA-4198-A1B1-687E0A3E6EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6440AC7C-2EEA-4198-A1B1-687E0A3E6EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6440AC7C-2EEA-4198-A1B1-687E0A3E6EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6440AC7C-2EEA-4198-A1B1-687E0A3E6EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3A9B6B-8C9C-4593-8EC2-E0FBB11F2FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3A9B6B-8C9C-4593-8EC2-E0FBB11F2FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3A9B6B-8C9C-4593-8EC2-E0FBB11F2FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3A9B6B-8C9C-4593-8EC2-E0FBB11F2FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

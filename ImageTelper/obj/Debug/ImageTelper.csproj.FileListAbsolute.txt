@@ -1,0 +1,5 @@
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\ImageTelper\bin\Debug\ImageTelper.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\ImageTelper\bin\Debug\ImageTelper.pdb
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\ImageTelper\obj\Debug\ImageTelper.csprojResolveAssemblyReference.cache
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\ImageTelper\obj\Debug\ImageTelper.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\ImageTelper\obj\Debug\ImageTelper.pdb

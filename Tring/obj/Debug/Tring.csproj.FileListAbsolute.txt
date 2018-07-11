@@ -1,0 +1,5 @@
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\bin\Debug\Tring.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\bin\Debug\Tring.pdb
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\obj\Debug\Tring.csprojResolveAssemblyReference.cache
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\obj\Debug\Tring.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\obj\Debug\Tring.pdb

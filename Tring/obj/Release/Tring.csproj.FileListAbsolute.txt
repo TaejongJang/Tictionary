@@ -1,0 +1,4 @@
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\bin\Release\Tring.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\bin\Release\Tring.pdb
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\obj\Release\Tring.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\Tring\obj\Release\Tring.pdb

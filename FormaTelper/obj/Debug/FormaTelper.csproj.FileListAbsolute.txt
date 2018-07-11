@@ -1,0 +1,5 @@
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\FormaTelper\bin\Debug\FormaTelper.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\FormaTelper\bin\Debug\FormaTelper.pdb
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\FormaTelper\obj\Debug\FormaTelper.csprojResolveAssemblyReference.cache
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\FormaTelper\obj\Debug\FormaTelper.dll
+C:\Users\Taejong\Documents\Visual Studio 2015\Projects\TaejongLibrary\Telper\FormaTelper\obj\Debug\FormaTelper.pdb
