@@ -170,5 +170,149 @@ namespace ImageTelper {
                 return null;
             }
         }
+
+        public static Image GrayScale(Image ImageValue) {
+            Bitmap bm = (Bitmap)ImageValue.Clone();
+            System.Drawing.Imaging.BitmapData bmData = bm.LockBits(new Rectangle(0, 0, bm.Width, bm.Height), System.Drawing.Imaging.ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+
+            int stride = bmData.Stride;
+            IntPtr Scan0 = bmData.Scan0;
+
+            unsafe
+            {
+                byte* p = (byte*)(void*)Scan0;
+
+                int nOffset = stride - bm.Width * 3;
+
+                byte red, green, blue;
+
+                for (int y = 0; y < bm.Height; ++y)
+                {
+                    for (int x = 0; x < bm.Width; ++x)
+                    {
+                        blue = p[0];
+                        green = p[1];
+                        red = p[2];
+
+                        p[0] = p[1] = p[2] = (byte)(.299 * red
+                            + .587 * green
+                            + .114 * blue);
+
+                        p += 3;
+                    }
+                    p += nOffset;
+                }
+            }
+
+            bm.UnlockBits(bmData);
+
+            return bm as Image;
+        }
+
+        public static Image BinaryScale(Image ImageValue) {
+            Bitmap bm = (Bitmap)ImageValue.Clone();
+            System.Drawing.Imaging.BitmapData bmData = bm.LockBits(new Rectangle(0, 0, bm.Width, bm.Height),
+                System.Drawing.Imaging.ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+            int stride = bmData.Stride; //the length of the line
+            System.IntPtr Scan0 = bmData.Scan0;
+            int Threshold = 220;
+
+            unsafe
+            {
+                byte* p = (byte*)(void*)Scan0;
+
+                int nOffset = stride - bm.Width * 3;
+
+                byte red, green, blue;
+                byte binary;
+
+                for (int y = 0; y < bm.Height; ++y)
+                {
+                    for (int x = 0; x < bm.Width; ++x)
+                    {
+                        blue = p[0];
+                        green = p[1];
+                        red = p[2];
+
+                        binary = (byte)(.299 * red
+                            + .587 * green
+                            + .114 * blue);
+
+                        if (binary < Threshold)
+                            p[0] = p[1] = p[2] = 0;
+                        else
+                            if (binary >= Threshold)
+                            p[0] = p[1] = p[2] = 255;
+                        else
+                            if (binary < Threshold)
+                            p[0] = p[1] = p[2] = 255;
+                        else
+                            p[0] = p[1] = p[2] = 0;
+                        p += 3;
+                    }
+                    p += nOffset;
+                }
+
+            }
+
+            bm.UnlockBits(bmData);
+
+            return bm as Image;
+        }
+
+        public static Image NoiseRemove(Image ImageValue) {
+            Bitmap b1 = (Bitmap)ImageValue.Clone();
+            Bitmap b2 = (Bitmap)ImageValue.Clone();
+            
+            byte val;
+            
+            System.Drawing.Imaging.BitmapData bmData = b1.LockBits(new Rectangle(0, 0, ImageValue.Width, ImageValue.Height),
+                System.Drawing.Imaging.ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+            System.Drawing.Imaging.BitmapData bmData2 = b2.LockBits(new Rectangle(0, 0, b2.Width, b2.Height),
+                System.Drawing.Imaging.ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+
+            int stride = bmData.Stride;
+            System.IntPtr Scan0 = bmData.Scan0;
+            System.IntPtr Scan02 = bmData2.Scan0;
+
+            unsafe
+            {
+                byte* p = (byte*)(void*)Scan0;
+                byte* p2 = (byte*)(void*)Scan02;
+
+                int nOffset = stride - ImageValue.Width * 3;
+                int nWidth = ImageValue.Width * 3;
+
+                p += stride;
+                p2 += stride;
+                //int val;
+                for (int y = 1; y < ImageValue.Height - 1; ++y)
+                {
+                    p += 3;
+                    p2 += 3;
+
+                    for (int x = 3; x < nWidth - 3; ++x)
+                    {
+                        val = p2[0];
+                        if (val == 0)
+                            if ((p2 + 3)[0] == 0 || (p2 - 3)[0] == 0 || (p2 + stride)[0] == 0 || (p2 - stride)[0] == 0 || (p2 + stride + 3)[0] == val || (p2 + stride - 3)[0] == 0 || (p2 - stride - 3)[0] == 0 || (p2 + stride + 3)[0] == 0)
+                                p[0] = val;
+                            else
+                                p[0] = 255;
+
+                        ++p;
+                        ++p2;
+                    }
+
+                    p += nOffset + 3;
+                    p2 += nOffset + 3;
+                }
+            }
+
+            b1.UnlockBits(bmData);
+            b2.UnlockBits(bmData2);
+
+            return b1 as Image;
+        }
     }
 }
